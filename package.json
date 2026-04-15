@@ -1,0 +1,41 @@
+{
+  "name": "arcanea-mcp-starter",
+  "version": "1.0.0",
+  "description": "Production-ready MCP server starter — SDK 1.29, 3 example tools, HTTP/SSE transport. Fork to build your own Claude tools.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "arcanea-mcp-starter": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "agents",
+    "starter",
+    "template",
+    "arcanea"
+  ],
+  "license": "MIT",
+  "author": "Arcanea"
+}
